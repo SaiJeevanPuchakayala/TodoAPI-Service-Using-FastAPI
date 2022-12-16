@@ -1,7 +1,7 @@
 from fastapi import APIRouter, HTTPException, status
 from schemas.user_schema import UserAuth, UserOut, UserUpdate
 from fastapi import Depends
-from services.user_service import UserService
+from service_methods.user_service import UserService
 import pymongo
 from models.user_model import User
 from api.deps.user_deps import get_current_user

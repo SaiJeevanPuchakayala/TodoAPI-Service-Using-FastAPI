@@ -4,7 +4,7 @@ from pydantic import AnyHttpUrl, BaseSettings
 
 
 class Settings(BaseSettings):
-    API_V1_STR: str = "/api/v1"
+    API_STR: str = "/todo_api"
     JWT_SECRET_KEY: str = "Jeevan"
     JWT_REFRESH_SECRET_KEY: str = "Sai Jeevan"
     ALGORITHM = "HS256"

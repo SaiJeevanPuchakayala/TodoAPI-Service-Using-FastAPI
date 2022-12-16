@@ -3,13 +3,13 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from motor.motor_asyncio import AsyncIOMotorClient
 
-from api.api_v1.router import router
+from api.api.router import router
 from core.config import settings
 from models.todo_model import Todo
 from models.user_model import User
 
 app = FastAPI(
-    title=settings.PROJECT_NAME, openapi_url=f"{settings.API_V1_STR}/openapi.json"
+    title=settings.PROJECT_NAME, openapi_url=f"{settings.API_STR}/openapi.json"
 )
 
 app.add_middleware(
@@ -32,4 +32,4 @@ async def app_init():
     await init_beanie(database=db_client, document_models=[User, Todo])
 
 
-app.include_router(router, prefix=settings.API_V1_STR)
+app.include_router(router, prefix=settings.API_STR)

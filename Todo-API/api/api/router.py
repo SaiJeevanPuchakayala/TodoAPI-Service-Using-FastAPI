@@ -1,6 +1,6 @@
 from fastapi import APIRouter
-from api.api_v1.handlers import user
-from api.api_v1.handlers import todo
+from api.api.handlers import user
+from api.api.handlers import todo
 from api.auth.jwt import auth_router
 
 router = APIRouter()

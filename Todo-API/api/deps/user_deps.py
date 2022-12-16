@@ -5,11 +5,11 @@ from core.config import settings
 from models.user_model import User
 from jose import jwt
 from pydantic import ValidationError
-from services.user_service import UserService
+from service_methods.user_service import UserService
 from schemas.auth_schema import TokenPayload
 
 reuseable_oauth = OAuth2PasswordBearer(
-    tokenUrl=f"{settings.API_V1_STR}/auth/login", scheme_name="JWT"
+    tokenUrl=f"{settings.API_STR}/auth/login", scheme_name="JWT"
 )
 
 

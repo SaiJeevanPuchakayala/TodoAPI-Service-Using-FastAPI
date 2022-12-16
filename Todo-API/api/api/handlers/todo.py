@@ -4,7 +4,7 @@ from fastapi import APIRouter, Depends
 from models.user_model import User
 from api.deps.user_deps import get_current_user
 from schemas.todo_schema import TodoOut, TodoCreate, TodoUpdate
-from services.todo_service import TodoService
+from service_methods.todo_service import TodoService
 from models.todo_model import Todo
 
 
