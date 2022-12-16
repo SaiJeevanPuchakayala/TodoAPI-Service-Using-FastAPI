@@ -4,7 +4,7 @@ from uuid import UUID, uuid4
 from beanie import Document, Indexed
 from pydantic import Field, EmailStr
 
-
+# Intiatable User collection schema
 class User(Document):
     user_id: UUID = Field(default_factory=uuid4)
     username: Indexed(str, unique=True)

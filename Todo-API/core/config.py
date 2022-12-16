@@ -13,7 +13,7 @@ class Settings(BaseSettings):
     BACKEND_CORS_ORIGINS: List[AnyHttpUrl] = ["http://localhost:3000"]
     PROJECT_NAME: str = "TodoApp"
 
-    # Database
+    # Local Database connection string
     MONGO_CONNECTION_STRING: str = "mongodb://localhost:27017"
 
     class Config:

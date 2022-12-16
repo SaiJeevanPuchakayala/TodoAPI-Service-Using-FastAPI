@@ -1,0 +1,3 @@
+_id,email,first_name,hashed_password,last_name,user_id,username
+639bff5e9b276c7dd41dcefb,user@jeevan.com,Sai,$2b$12$Mr5z5Usbv1edyZee6qn3ueUrF6ZRU.8YcG15zyWF/V9yvSEbG1iI2,null,NJBg4oWERNaHPoLHEEF8ng==,Jeevan
+639c0835c8ef70b8a784f85e,user@vamshi.com,null,$2b$12$yUcUprIu.EhLV7w0XBF0X.7su4yd6Dc44w/iakGVdJ9qvcCT7aAia,null,t93FQ7+GSmCrbtY9SJTJ3A==,Vamshi

@@ -5,7 +5,7 @@ from beanie import Document, Indexed, Link, before_event, Replace, Insert
 from pydantic import Field
 from .user_model import User
 
-
+# Intiatable Todo collection schema
 class Todo(Document):
     todo_id: UUID = Field(default_factory=uuid4, unique=True)
     status: bool = False

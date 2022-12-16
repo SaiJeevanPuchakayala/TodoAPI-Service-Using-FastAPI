@@ -24,7 +24,7 @@ app.add_middleware(
 @app.on_event("startup")
 async def app_init():
     """
-    initialize crucial application services
+    initializing required startup configurations.
     """
 
     db_client = AsyncIOMotorClient(settings.MONGO_CONNECTION_STRING).TodoApp

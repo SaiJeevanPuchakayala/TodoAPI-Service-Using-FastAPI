@@ -7,7 +7,7 @@ import pymongo
 
 from schemas.user_schema import UserUpdate
 
-
+# Below are all the CRUD operation routes of User API service
 class UserService:
     @staticmethod
     async def create_user(user: UserAuth):

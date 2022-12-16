@@ -4,7 +4,7 @@ from models.user_model import User
 from models.todo_model import Todo
 from schemas.todo_schema import TodoCreate, TodoUpdate
 
-
+# Below are all the CRUD operation routes of Todo API service
 class TodoService:
     @staticmethod
     async def list_todos(user: User) -> List[Todo]:

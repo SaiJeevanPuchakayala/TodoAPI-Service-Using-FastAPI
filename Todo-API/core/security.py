@@ -20,6 +20,11 @@ def create_access_token(subject: Union[str, Any], expires_delta: int = None) -> 
     return encoded_jwt
 
 
+"""
+Since access tokens aren't valid for an extended period because of security reasons, a refresh token helps to re-authenticate a user without login credentials. This Refresh token is never exposed to the client-side.
+"""
+
+
 def create_refresh_token(subject: Union[str, Any], expires_delta: int = None) -> str:
     if expires_delta is not None:
         expires_delta = datetime.utcnow() + expires_delta
