@@ -33,8 +33,8 @@ http://127.0.0.1:8000/docs
 
 
 ## Important Notes:
-1. Schemas are just to built to understand the params and responses of the API clearly.
-2. Most of the code files are built to create API docs in layman's terms. 
+1. Schemas are built to understand the params and responses of the APIs clearly apart from their usage in API's architecture.
+2. Most of the class names, function names and variable names are very clear as per developers usage.
 
 ## References Used
 ```
