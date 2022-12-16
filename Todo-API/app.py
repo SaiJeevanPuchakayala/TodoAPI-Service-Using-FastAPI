@@ -9,8 +9,7 @@ from models.todo_model import Todo
 from models.user_model import User
 
 app = FastAPI(
-    title=settings.PROJECT_NAME,
-    openapi_url=f"{settings.API_V1_STR}/openapi.json"
+    title=settings.PROJECT_NAME, openapi_url=f"{settings.API_V1_STR}/openapi.json"
 )
 
 app.add_middleware(
@@ -21,20 +20,16 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+
 @app.on_event("startup")
 async def app_init():
     """
-        initialize crucial application services
+    initialize crucial application services
     """
-    
+
     db_client = AsyncIOMotorClient(settings.MONGO_CONNECTION_STRING).TodoApp
-    
-    await init_beanie(
-        database=db_client,
-        document_models= [
-            User,
-            Todo
-        ]
-    )
-    
+
+    await init_beanie(database=db_client, document_models=[User, Todo])
+
+
 app.include_router(router, prefix=settings.API_V1_STR)

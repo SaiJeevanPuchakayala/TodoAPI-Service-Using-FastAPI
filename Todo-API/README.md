@@ -1,4 +1,4 @@
-# TodoApp: Fastapi | MongoDB | REST API
+# TodoApi: Fastapi | MongoDB | REST API
 
 ## To Run in Local
 
@@ -13,5 +13,9 @@
 3. Start server 
 ```bash
 >_ uvicorn index:app --reload
+```
+4. Access APIs at
+```
+http://127.0.0.1:8000/docs
 ```
 
