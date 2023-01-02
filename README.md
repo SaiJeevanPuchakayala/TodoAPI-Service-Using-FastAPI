@@ -16,31 +16,4 @@
 
 <br/>
 
-### All the assignment files are present in Todo-API folder.
-
-<br/>
-
 ### Todo.csv and User.csv are exported collections from local MongoDB TodoApp Database.
-
-<br/>
-
-I developed this Todo List API with basic todo app architecture, Many functionalities can me implemented in future like reminders and alerts.
-
-I'm able to complete this assignment with all the knowledge that I have acquired over past three years from my Python Developer internships in two fin-tech startups and my personal projects. And I can work out of the box to add some random impressive functionalities to the applications that build upon my contribution.
-
-Hope you understand. Check my previous works in the Github link below to have trust in me.
-
-GitHub Link: https://github.com/SaiJeevanPuchakayala?tab=repositories
-
-Kindly go through all the files in the repo.
-
-Trust is Built with Consistency, Thank You! 
-
-<br/>
-
-### Feel free to contact me if you have any doubt about this Todo APIs:
-* Name: Sai Jeevan Puchakayala
-* Phone Number: +91 7288961100
-* Email: saijeevan2002@gmail.com
-* Linked Profile: https://www.linkedin.com/in/saijeevanpuchakayala/
-
